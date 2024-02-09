@@ -1,5 +1,5 @@
 ﻿namespace Kiln.Common {
-    public class Vec2 {
+    public struct Vec2 : IEquatable<Vec2> {
 
         public int X;
         public int Y;
@@ -13,6 +13,10 @@
         public Vec2(float x, float y) {
             X = (int)x;
             Y = (int)y;
+        }
+
+        public bool Equals(Vec2 other) {
+            return (X == other.X) && (Y == other.Y);
         }
     }
 }

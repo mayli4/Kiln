@@ -8,5 +8,4 @@ global using System.Linq;
 global using System.Collections.ObjectModel;
 global using System.IO;
 
-global using KilnVector2 = Kiln.Common.Vec2;
 global using SimdVector2 = System.Numerics.Vector2;
